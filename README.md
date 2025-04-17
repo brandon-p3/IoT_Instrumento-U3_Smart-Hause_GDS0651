@@ -144,6 +144,12 @@ El sistema guarda todos los datos generados por los sensores en una base de dato
 
 ---
 
+## Ejecicios de Clase
+
+Link a videos
+
+https://drive.google.com/drive/folders/1GOXApjWNVipbJKVLVaaz4QoqaaGXq0BR?usp=sharing
+
 ## 🚀 Conclusión
 
 **SMART-HOME** representa una solución integral de automatización residencial enfocada en el cuidado del hogar y de sus habitantes. Combina electrónica, IoT, desarrollo web y diseño 3D en un proyecto funcional, modular y escalable.
