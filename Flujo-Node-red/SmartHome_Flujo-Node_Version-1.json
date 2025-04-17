@@ -1,0 +1,449 @@
+[
+    {
+        "id": "cdf4527b90ea6647",
+        "type": "tab",
+        "label": "SmartHome Version 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8f25df28fdcc290f",
+        "type": "mqtt in",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "topic": "smartHause/sensor/foto",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "07f04f4851fdb3f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "2ae14e3b4206757e"
+            ]
+        ]
+    },
+    {
+        "id": "2ae14e3b4206757e",
+        "type": "postgresql",
+        "z": "cdf4527b90ea6647",
+        "name": "INSERT foto",
+        "query": "INSERT INTO detecciones (id_sensor, mensaje_detectado)\nVALUES (5, '{{{msg.payload}}}');",
+        "postgreSQLConfig": "19c94520671cf0c5",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 450,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e28ed05a570b252",
+        "type": "mqtt in",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "topic": "smartHause/sensor/lluvia",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "07f04f4851fdb3f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "59865db3a6a98cdc"
+            ]
+        ]
+    },
+    {
+        "id": "59865db3a6a98cdc",
+        "type": "postgresql",
+        "z": "cdf4527b90ea6647",
+        "name": "INSERT lluvia",
+        "query": "INSERT INTO detecciones (id_sensor, mensaje_detectado)\nVALUES (4, '{{{msg.payload}}}');",
+        "postgreSQLConfig": "19c94520671cf0c5",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 460,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1335d5fa59c4a21",
+        "type": "mqtt in",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "topic": "smartHause/sensor/ultrasonico",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "07f04f4851fdb3f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "fdfc6af3a1d87413"
+            ]
+        ]
+    },
+    {
+        "id": "fdfc6af3a1d87413",
+        "type": "postgresql",
+        "z": "cdf4527b90ea6647",
+        "name": "INSERT ultrasonico",
+        "query": "INSERT INTO detecciones (id_sensor, mensaje_detectado)\nVALUES (2, 'Alguien esta en la puerta {{{msg.payload}}}');",
+        "postgreSQLConfig": "19c94520671cf0c5",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 470,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "315ae3aca198cb8d",
+        "type": "mqtt in",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "topic": "smartHause/sensor/humo",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "07f04f4851fdb3f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "9498fa8e80de2f2b"
+            ]
+        ]
+    },
+    {
+        "id": "9498fa8e80de2f2b",
+        "type": "postgresql",
+        "z": "cdf4527b90ea6647",
+        "name": "INSERT humo",
+        "query": "INSERT INTO detecciones (id_sensor, mensaje_detectado)\nVALUES (3, 'Se detetecto este nivel de gas: {{{msg.payload}}}');",
+        "postgreSQLConfig": "19c94520671cf0c5",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 460,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e6fd236c0f9694a3",
+        "type": "ui_switch",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "label": "Abrir techo del patio",
+        "tooltip": "",
+        "group": "10a03eef76e48195",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 200,
+        "y": 540,
+        "wires": [
+            [
+                "1929d9a81da2f83e"
+            ]
+        ]
+    },
+    {
+        "id": "286208a3c9c262d5",
+        "type": "ui_switch",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "label": "Abrir ventana",
+        "tooltip": "",
+        "group": "10a03eef76e48195",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "2",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "3",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "5c5e26437076a47b"
+            ]
+        ]
+    },
+    {
+        "id": "dd5ab2632e5bcff4",
+        "type": "ui_switch",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "label": "Prender ventilador",
+        "tooltip": "",
+        "group": "10a03eef76e48195",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "4",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "5",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 190,
+        "y": 620,
+        "wires": [
+            [
+                "7834b8ee62951a44"
+            ]
+        ]
+    },
+    {
+        "id": "1929d9a81da2f83e",
+        "type": "mqtt out",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "topic": "smartHause/sensor/recibir",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "07f04f4851fdb3f0",
+        "x": 530,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "5c5e26437076a47b",
+        "type": "mqtt out",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "topic": "smartHause/sensor/recibir",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "07f04f4851fdb3f0",
+        "x": 530,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "7834b8ee62951a44",
+        "type": "mqtt out",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "topic": "smartHause/sensor/recibir",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "07f04f4851fdb3f0",
+        "x": 530,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "4d866d873159638e",
+        "type": "mqtt in",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "topic": "smartHause/sensor/humo/enviar",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "07f04f4851fdb3f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 460,
+        "wires": [
+            [
+                "6a018a2f9616ddc5"
+            ]
+        ]
+    },
+    {
+        "id": "8ef9adfd20091646",
+        "type": "mqtt out",
+        "z": "cdf4527b90ea6647",
+        "name": "",
+        "topic": "smartHause/sensor/humo/recibir",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "07f04f4851fdb3f0",
+        "x": 730,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "6a018a2f9616ddc5",
+        "type": "function",
+        "z": "cdf4527b90ea6647",
+        "name": "obtenerSeñal",
+        "func": "return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "8ef9adfd20091646"
+            ]
+        ]
+    },
+    {
+        "id": "07f04f4851fdb3f0",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.0.36",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "19c94520671cf0c5",
+        "type": "postgreSQLConfig",
+        "name": "smarthome",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "smarthome",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "smarthome",
+        "userFieldType": "str",
+        "password": "linux1234",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "10a03eef76e48195",
+        "type": "ui_group",
+        "name": "SmartHause",
+        "tab": "53be907875770d77",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "53be907875770d77",
+        "type": "ui_tab",
+        "name": "Smart Hause",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
