@@ -141,6 +141,26 @@ El sistema guarda todos los datos generados por los sensores en una base de dato
 - El sistema puede ser escalado fácilmente con nuevos sensores o actuadores.
 - Se puede configurar para notificaciones por correo o Telegram en caso de emergencias.
 - Posibilidad de integrar cámaras IP o autenticación de usuarios en la interfaz web.
+- ---
+
+## Videos explicando el funcionamiento de cada placa
+
+Link a videos
+
+https://drive.google.com/drive/folders/1GOXApjWNVipbJKVLVaaz4QoqaaGXq0BR?usp=sharing
+
+## Videos explicando el funcionamiento general de toda la casa
+
+Link a videos
+
+https://drive.google.com/drive/folders/1GOXApjWNVipbJKVLVaaz4QoqaaGXq0BR?usp=sharing
+
+## Evidencia (Videos) de los clientes que aprueban el proyecto
+
+Link a videos
+
+https://drive.google.com/drive/folders/1GOXApjWNVipbJKVLVaaz4QoqaaGXq0BR?usp=sharing
+
 
 ---
 
