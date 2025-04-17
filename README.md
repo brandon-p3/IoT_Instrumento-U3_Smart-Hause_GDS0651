@@ -170,9 +170,9 @@ El sistema guarda todos los datos generados por los sensores en una base de dato
 
 - **Nombre del equipo**: _[Tu Equipo Smart Home]_
 - **Integrantes**:
-  - Nombre 1 - [@github_user]
-  - Nombre 2 - [@github_user]
-  - Nombre 3 - [@github_user]
+  - Mendoza Amaro Brandon Gustavo - [@github_user]
+  - Morales Lezama Mirza Natzielly  - Mirza Morales
+  - Ramirez Ramirez Lizett - [@github_user]
 
 ---
 
