@@ -53,26 +53,30 @@ El sistema está distribuido en **3 placas ESP32**, cada una encargada de distin
 
 ---
 
-## 🧹 Tabla de Actuadores
-
-| Nombre           | Tipo                 | Uso                                                 | Imagen |
-|------------------|----------------------|------------------------------------------------------|--------|
-| Motor Paso       | Motor (Pasos)        | Subir o bajar el techo en caso de lluvia             | ![](img/motor_pasos.jpg) |
-| Servo Motor      | Servo                | Abrir la ventana si se detecta humo                  | ![](img/servo.jpg) |
-| Buzzer           | Actuador Sonoro      | Sonar en caso de humo o presencia detectada en puerta | ![](img/buzzer.jpg) |
-| Leds RGB         | Iluminación RGB      | Encender o apagar según el nivel de luz              | ![](img/led_rgb.jpg) |
-| Motor Micro DC   | Motor DC + Driver    | Activar ventilador cuando se detecta humo            | ![](img/motor_dc.jpg) |
+¡Claro! Aquí tienes una versión más estilizada y visualmente agradable de tus tablas, ideal para presentaciones o documentación:
 
 ---
 
-## 🌧️ Tabla de Sensores
+## 🧹 **Tabla de Actuadores**
 
-| Nombre                       | Tipo                  | Uso                                                  | Imagen |
-|------------------------------|-----------------------|-------------------------------------------------------|--------|
-| Sensor Ultrasónico HC-SR04  | Proximidad            | Detectar presencia en la entrada principal           | ![](img/hcsr04.jpg) |
-| Detector de Humo MQ-2       | Gas y Humo            | Activar alarma, abrir ventana, y prender ventilador   | ![](img/mq2.jpg) |
-| Sensor de Lluvia YL-83      | Humedad superficial   | Detectar lluvia para subir el techo                  | ![](img/yl83.jpg) |
-| Sensor de Luz LDR           | Fotoresistencia       | Medir luz natural y controlar luces RGB              | ![](img/ldr.jpg) |
+| **Nombre**         | **Tipo**              | **Uso**                                                    | **Imagen** |
+|--------------------|-----------------------|-------------------------------------------------------------|------------|
+| **Motor Paso**     | Motor (Pasos)         | Subir o bajar el techo en caso de lluvia                    | <img src="https://github.com/user-attachments/assets/e7c641b1-ff37-40ef-8c2c-9576ee7891ee" width="100"> |
+| **Servo Motor**    | Micro ServoMotor      | Abrir la ventana si se detecta humo                         | <img src="https://github.com/user-attachments/assets/ddad088b-02e3-463b-9cb3-6301d5e40070" width="100"> |
+| **Buzzer Pasivo**  | Actuador Sonoro       | Sonar en caso de humo o presencia detectada en puerta       | <img src="https://github.com/user-attachments/assets/dfef9d15-3674-43f1-a72b-3b714f6f3f0e" width="100"> |
+| **Leds RGB**       | Iluminación RGB       | Encender o apagar según el nivel de luz                     | <img src="https://github.com/user-attachments/assets/9059f6e2-0149-417f-9d82-783c3736f98b" width="100"> |
+| **Motor Micro DC** | Motor DC + Driver     | Activar ventilador cuando se detecta humo                   | <img src="https://github.com/user-attachments/assets/3042e365-f1be-4ba3-bcd8-de3d46382f9d" width="100"> |
+
+---
+
+## 🌧️ **Tabla de Sensores**
+
+| **Nombre**                   | **Tipo**              | **Uso**                                                    | **Imagen** |
+|------------------------------|-----------------------|-------------------------------------------------------------|------------|
+| **Sensor Ultrasónico HC-SR04** | Proximidad          | Detectar presencia en la entrada principal                  | <img src="https://github.com/user-attachments/assets/25fab6bb-46bb-42de-9205-a2f2226286b6" width="100"> |
+| **Detector de Humo MQ-2**   | Gas y Humo            | Activar alarma, abrir ventana, y prender ventilador         | <img src="https://github.com/user-attachments/assets/26c3eef8-ee24-44e1-9594-23640b22080c" width="100"> |
+| **Sensor de Lluvia YL-83**  | Humedad superficial   | Detectar lluvia para subir el techo                         | <img src="https://github.com/user-attachments/assets/501125ca-f021-49b0-81f4-7571ea8b3cac" width="100"> |
+| **Sensor de Luz LDR**       | Fotoresistencia       | Medir luz natural y controlar luces RGB                     | <img src="https://github.com/user-attachments/assets/b8101240-da5d-4628-b200-595423f2ff32" width="100"> |
 
 ---
 
@@ -101,10 +105,11 @@ La interfaz fue desarrollada en **Node-RED** y permite:
 - Controlar manualmente el techo, ventilador y ventana.
 - Visualizar gráficas en tiempo real de los sensores.
 - Encender/apagar los actuadores desde cualquier navegador.
+- Visualizar graficas y metricas sobre el estado de las ultimas 10 detecciones por parte del MQ-02
+- Visualizar graficas y metricas sobre la duracion (Horas) de las lluvia en las ultimas 10 detecciones de lluvia
 
 **Ejemplo de interfaz:**
-
-> ![](img/interfaz_nodered.jpg)
+<img src="https://github.com/user-attachments/assets/91fc5a65-bb0f-47d3-a1e2-feef6ea24597">
 
 ---
 
