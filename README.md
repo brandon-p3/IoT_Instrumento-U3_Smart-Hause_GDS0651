@@ -126,6 +126,12 @@ La casa fue creada con materiales comunes de maqueta, pero incorpora piezas func
 > ![](img/mecanismo_techo.jpg)
 
 ---
+## 🏠 Diagramas de las placas
+**Placa 3 (LLUVIA, LDR, RGB, MOTOR-PASOS)**
+<br>
+Link: https://app.cirkitdesigner.com/project/b07a5b19-9e06-4433-bb01-3e5187981fbb 
+<img src="https://github.com/user-attachments/assets/cbe0dc9b-e2ec-4521-84fb-8ee250ee25aa">
+---
 
 ## 🧪 Base de Datos y Almacenamiento
 
