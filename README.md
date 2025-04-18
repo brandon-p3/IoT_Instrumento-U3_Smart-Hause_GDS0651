@@ -127,6 +127,10 @@ La casa fue creada con materiales comunes de maqueta, pero incorpora piezas func
 
 ---
 ## 🏠 Diagramas de las placas
+**Placa 1 ()**
+<br>
+Link: https://app.cirkitdesigner.com/project/b07a5b19-9e06-4433-bb01-3e5187981fbb 
+<img src="https://github.com/user-attachments/assets/e294dc95-e62f-449d-bf96-126de5ad4691">
 **Placa 3 (LLUVIA, LDR, RGB, MOTOR-PASOS)**
 <br>
 Link: https://app.cirkitdesigner.com/project/b07a5b19-9e06-4433-bb01-3e5187981fbb 
