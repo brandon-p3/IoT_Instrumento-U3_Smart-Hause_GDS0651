@@ -198,6 +198,12 @@ https://drive.google.com/drive/folders/1GOXApjWNVipbJKVLVaaz4QoqaaGXq0BR?usp=sha
 
 ---
 
+## Coevaluación
+
+https://docs.google.com/document/d/1jDS9AxsSn1z5lsY4fK3YzhkUiO5Kk1glECyVzDjCRfc/edit?usp=sharing
+
+---
+
 ## ✍️ Autores
 
 - **Nombre del equipo**: _[Tu Equipo Smart Home]_
