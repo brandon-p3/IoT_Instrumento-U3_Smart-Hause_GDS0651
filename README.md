@@ -51,12 +51,6 @@ El sistema está distribuido en **3 placas ESP32**, cada una encargada de distin
                     [PostgreSQL]
 ```
 
----
-
-¡Claro! Aquí tienes una versión más estilizada y visualmente agradable de tus tablas, ideal para presentaciones o documentación:
-
----
-
 ## 🧹 **Tabla de Actuadores**
 
 | **Nombre**         | **Tipo**              | **Uso**                                                    | **Imagen** |
@@ -122,8 +116,11 @@ La casa fue creada con materiales comunes de maqueta, pero incorpora piezas func
 
 **Imágenes de la maqueta:**
 
-> ![](img/maqueta_frontal.jpg)  
-> ![](img/mecanismo_techo.jpg)
+
+> ![Imagen de WhatsApp 2025-04-19 a las 23 19 50_9ff3b9fd](https://github.com/user-attachments/assets/4df8ea1f-31ee-44a6-a3de-5d4c789c40a6)
+> ![Imagen de WhatsApp 2025-04-19 a las 23 19 50_c4a24e58](https://github.com/user-attachments/assets/ee243578-3fab-410a-8f33-38600f44963d)
+> ![Imagen de WhatsApp 2025-04-19 a las 23 19 50_6111684d](https://github.com/user-attachments/assets/42570bd8-5916-4985-ba0b-01f4823fff46)
+> ![Imagen de WhatsApp 2025-04-19 a las 23 19 50_3b80c884](https://github.com/user-attachments/assets/6ab9da89-50d0-4e04-9206-b45e710d8ad3)
 
 ---
 ## 🏠 Diagramas de las placas
