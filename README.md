@@ -114,13 +114,8 @@ La casa fue creada con materiales comunes de maqueta, pero incorpora piezas func
 - Soportes para sensores y actuadores.
 - Estructuras para ventanas funcionales.
 
-**Imágenes de la maqueta:**
-
-
-> ![Imagen de WhatsApp 2025-04-19 a las 23 19 50_9ff3b9fd](https://github.com/user-attachments/assets/4df8ea1f-31ee-44a6-a3de-5d4c789c40a6)
-> ![Imagen de WhatsApp 2025-04-19 a las 23 19 50_c4a24e58](https://github.com/user-attachments/assets/ee243578-3fab-410a-8f33-38600f44963d)
-> ![Imagen de WhatsApp 2025-04-19 a las 23 19 50_6111684d](https://github.com/user-attachments/assets/42570bd8-5916-4985-ba0b-01f4823fff46)
-> ![Imagen de WhatsApp 2025-04-19 a las 23 19 50_3b80c884](https://github.com/user-attachments/assets/6ab9da89-50d0-4e04-9206-b45e710d8ad3)
+**📸 Imágenes de la maqueta del proyecto**
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;"> <img src="https://github.com/user-attachments/assets/4df8ea1f-31ee-44a6-a3de-5d4c789c40a6" alt="Imagen 1" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> <img src="https://github.com/user-attachments/assets/ee243578-3fab-410a-8f33-38600f44963d" alt="Imagen 2" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> <img src="https://github.com/user-attachments/assets/42570bd8-5916-4985-ba0b-01f4823fff46" alt="Imagen 3" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> <img src="https://github.com/user-attachments/assets/6ab9da89-50d0-4e04-9206-b45e710d8ad3" alt="Imagen 4" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> </div>
 
 ---
 ## 🏠 Diagramas de las placas
@@ -147,16 +142,7 @@ El sistema guarda todos los datos generados por los sensores en una base de dato
 - Consultas históricas de temperaturas, humo, lluvia, presencia, etc.
 - Análisis estadístico posterior.
 - Exportación de datos para informes o visualización externa.
-
 ---
-
-## 🔐 Seguridad y Escalabilidad
-
-- El sistema puede ser escalado fácilmente con nuevos sensores o actuadores.
-- Se puede configurar para notificaciones por correo o Telegram en caso de emergencias.
-- Posibilidad de integrar cámaras IP o autenticación de usuarios en la interfaz web.
-- ---
-
 ## Videos explicando el funcionamiento de cada placa
 
 Link a videos
@@ -183,28 +169,6 @@ Link a videos
 
 https://drive.google.com/drive/folders/1GOXApjWNVipbJKVLVaaz4QoqaaGXq0BR?usp=sharing
 
-## 🚀 Conclusión
-
-**SMART-HOME** representa una solución integral de automatización residencial enfocada en el cuidado del hogar y de sus habitantes. Combina electrónica, IoT, desarrollo web y diseño 3D en un proyecto funcional, modular y escalable.
-
----
-
-## 📂 Estructura del Proyecto
-
-```
-/smart-home/
-│
-├── img/                         # Imágenes para el README
-├── docs/                        # Documentación técnica adicional
-├── node-red-flows/             # Flujos de Node-RED exportados
-├── esp32-codigo/               # Códigos para los ESP32
-├── sql/                        # Scripts para PostgreSQL
-├── README.md                   # Este archivo
-└── ...
-```
-
----
-
 ## Coevaluación
 
 https://docs.google.com/document/d/1jDS9AxsSn1z5lsY4fK3YzhkUiO5Kk1glECyVzDjCRfc/edit?usp=sharing
@@ -215,12 +179,8 @@ https://docs.google.com/document/d/1jDS9AxsSn1z5lsY4fK3YzhkUiO5Kk1glECyVzDjCRfc/
 
 - **Nombre del equipo**: _[Tu Equipo Smart Home]_
 - **Integrantes**:
-  - Mendoza Amaro Brandon Gustavo - [@github_user]
+  - Mendoza Amaro Brandon Gustavo - brandon-p3
   - Morales Lezama Mirza Natzielly  - Mirza Morales
-  - Ramirez Ramirez Lizett - [@github_user]
+  - Ramirez Ramirez Lizett 
 
 ---
-
-## 📌 Notas Finales
-
-> Este proyecto fue desarrollado como parte de una asignatur
