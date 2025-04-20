@@ -5,9 +5,9 @@ import time
 from umqtt.simple import MQTTClient
 
 # -------------------- Configuración WiFi y MQTT --------------------
-SSID = "Megacable_RdLp84U"
-PASSWORD = "99uh6AmygyWEqfKzz2"
-MQTT_BROKER = "192.168.0.40"
+SSID = "SiC.r"
+PASSWORD = "SiC2209@2023"
+MQTT_BROKER = "192.168.1.34"
 
 MQTT_TOPIC_LUZ = "smartHause/sensor/foto"
 MQTT_TOPIC_LLUVIA = "smartHause/sensor/lluvia"

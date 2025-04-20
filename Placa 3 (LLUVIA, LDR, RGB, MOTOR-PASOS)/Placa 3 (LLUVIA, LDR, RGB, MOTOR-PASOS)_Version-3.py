@@ -1,18 +1,21 @@
 from machine import Pin, PWM
 from time import sleep, ticks_ms
+from network import WLAN, STA_IF
+from urequests import post
 import network
 import time
 from umqtt.simple import MQTTClient
-import ujson 
+import ujson  # Para enviar mensajes en formato JSON
 
 # -------------------- Configuración WiFi y MQTT --------------------
-SSID = "Megacable_RdLp84U"
-PASSWORD = "99uh6AmygyWEqfKzz2"
-MQTT_BROKER = "192.168.0.40"
+SSID = "SiC.r"
+PASSWORD = "SiC2209@2023"
+MQTT_BROKER = "192.168.1.35"
 
 MQTT_TOPIC_LUZ = "smartHause/sensor/foto"
 MQTT_TOPIC_LLUVIA = "smartHause/sensor/lluvia"
 MQTT_TOPIC_CONTROL = "smartHause/sensor/recibir"  # ← desde aquí llega el control manual
+WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwGKuaOHTw1hUpiZA3aMqFP4aqnwI08iJEXpD0WVQLmOiErrm8ex8TyF4SBM7Aj45xu/exec"
 
 # -------------------- Pines --------------------
 IN1 = Pin(25, Pin.OUT)
@@ -92,6 +95,20 @@ def llegada_mensaje(topic, msg):
             cerrar_techo()
         else:
             print("⚠ Comando desconocido")
+            
+def send_to_sheets(temp, hum):
+    data = {
+        "msj": temp,
+        "valor": hum
+    }
+    try:
+        response = post(WEBAPP_URL, json = data)
+        print("Respuesta Guardada: ", response.text)
+        response.close()
+
+    except Exception as e:
+        print("Error al enviar los datos a la hoja de calculo", e)
+
 
 client = MQTTClient("ESP32_SISTEMA", MQTT_BROKER)
 client.set_callback(llegada_mensaje)
@@ -111,6 +128,7 @@ tiempo_inicio_lluvia = 0
 while True:
     # --- Sensor de agua (modo automático) ---
     estado_actual_agua = sensor_agua.value()
+    print("Hola")
     if estado_actual_agua != estado_anterior_agua:
         if estado_actual_agua == 1:
             print("💧 Agua detectada. Cerrando techo.")
@@ -120,6 +138,7 @@ while True:
                 "mensaje": "Agua detectada. Techo cerrado.",
                 "valor": 0
             })
+            send_to_sheets("Esta lloviendo afuera, el techo a sido bajado para protegerlo", 0)
             client.publish(MQTT_TOPIC_LLUVIA, mensaje.encode())
             lluvia_en_curso = True
             tiempo_inicio_lluvia = ticks_ms()
@@ -128,13 +147,14 @@ while True:
             abrir_techo()
             if lluvia_en_curso:
                 duracion_ms = ticks_ms() - tiempo_inicio_lluvia
-                duracion_horas = round(duracion_ms / (1000 * 60 * 60))  # Convertir a horas
+                duracion_horas = round(duracion_ms / (1000 * 60 * 60))
                 print(f"⏱️ Duración de la lluvia: {duracion_horas} horas")
                 mensaje = ujson.dumps({
                     "id_sensor": 4,
                     "mensaje": "Lluvia finalizada. Duración en horas.",
                     "valor": duracion_horas
                 })
+                send_to_sheets("Ha dejado de llover, se bajara el techo", duracion_horas)
                 client.publish(MQTT_TOPIC_LLUVIA, mensaje.encode())
                 lluvia_en_curso = False
         estado_anterior_agua = estado_actual_agua
@@ -164,3 +184,4 @@ while True:
     client.check_msg()  # Recibir mensajes manuales
 
     sleep(1)
+

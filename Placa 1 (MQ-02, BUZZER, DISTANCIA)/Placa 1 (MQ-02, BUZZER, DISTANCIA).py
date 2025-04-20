@@ -5,6 +5,7 @@ from urequests import post
 import network
 import time
 from umqtt.simple import MQTTClient
+import ujson 
 
 # -------------------- Configuración WiFi y MQTT --------------------
 SSID = "Megacable_RdLp84U"
