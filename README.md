@@ -136,6 +136,7 @@ Link: https://wokwi.com/projects/427323546919923713
 <br>
 Link: https://wokwi.com/projects/427323546919923713
 <img src="https://github.com/user-attachments/assets/65d1d161-48c8-4386-9c08-3418c299231e">
+
 <br>
 **Placa 3 (LLUVIA, LDR, RGB, MOTOR-PASOS)**
 <br>
