@@ -177,7 +177,7 @@ https://docs.google.com/document/d/1jDS9AxsSn1z5lsY4fK3YzhkUiO5Kk1glECyVzDjCRfc/
 
 ## ✍️ Autores
 
-- **Nombre del equipo**: _[Tu Equipo Smart Home]_
+- **Nombre del equipo**: SmartHome GDS0651
 - **Integrantes**:
   - Mendoza Amaro Brandon Gustavo - brandon-p3
   - Morales Lezama Mirza Natzielly  - Mirza Morales
