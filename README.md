@@ -132,6 +132,11 @@ La casa fue creada con materiales comunes de maqueta, pero incorpora piezas func
 Link: https://wokwi.com/projects/427323546919923713 
 <img src="https://github.com/user-attachments/assets/e294dc95-e62f-449d-bf96-126de5ad4691">
 <br>
+**Placa 2 (SERVO, MOTOR DC)**
+<br>
+Link: https://wokwi.com/projects/427323546919923713
+<img src="https://github.com/user-attachments/assets/65d1d161-48c8-4386-9c08-3418c299231e">
+<br>
 **Placa 3 (LLUVIA, LDR, RGB, MOTOR-PASOS)**
 <br>
 Link: https://app.cirkitdesigner.com/project/b07a5b19-9e06-4433-bb01-3e5187981fbb 
