@@ -164,20 +164,19 @@ El sistema guarda todos los datos generados por los sensores en una base de dato
 
 Link a videos
 
-https://drive.google.com/drive/folders/1GOXApjWNVipbJKVLVaaz4QoqaaGXq0BR?usp=sharing
+https://drive.google.com/drive/folders/1Mwg-OasbqF_vHa8ZhzucIkqC5u0zefmu?usp=drive_link
 
 ## Videos explicando el funcionamiento general de toda la casa
 
 Link a videos
 
-https://drive.google.com/drive/folders/1GOXApjWNVipbJKVLVaaz4QoqaaGXq0BR?usp=sharing
+https://drive.google.com/drive/folders/12ORMXZAib9PHsuYNOvswGEr8jB9Gjxr0?usp=sharing
 
 ## Evidencia (Videos) de los clientes que aprueban el proyecto
 
 Link a videos
 
-https://drive.google.com/drive/folders/1GOXApjWNVipbJKVLVaaz4QoqaaGXq0BR?usp=sharing
-
+https://drive.google.com/drive/folders/1yig3J2GGEPOLDp7m1ZyxWFej3fN-4ZA3?usp=sharing
 
 ---
 
