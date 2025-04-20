@@ -135,8 +135,8 @@ Link: https://wokwi.com/projects/427323546919923713
 **Placa 2 (SERVO, MOTOR DC)**
 <br>
 Link: https://wokwi.com/projects/427323546919923713
-<img src="![image](https://github.com/user-attachments/assets/17705892-ebf5-4b22-adb7-8831f1510112)
-">
+<img src="https://github.com/user-attachments/assets/65d1d161-48c8-4386-9c08-3418c299231e">
+
 <br>
 **Placa 3 (LLUVIA, LDR, RGB, MOTOR-PASOS)**
 <br>
