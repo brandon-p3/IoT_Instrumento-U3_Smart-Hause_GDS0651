@@ -82,8 +82,8 @@ Cuando el sensor **YL-83** detecta lluvia, se activa el **motor de pasos**, que 
 ### ☀️ Control de Iluminación
 El sensor **LDR** mide la luz ambiental. Si hay suficiente luz natural, se apagan las luces **RGB**; si hay poca, se encienden automáticamente.
 
-### 🔥 Detección de Humo
-El sensor **MQ-2** detecta humo o gases peligrosos, lo que activa:
+### 🔥 Detección de Gas
+El sensor **MQ-2** detecta gases peligrosos, lo que activa:
 - El **buzzer** como alarma.
 - El **servo motor** para abrir una ventana.
 - El **motor DC** para encender un ventilador que ventile el área.
@@ -130,7 +130,9 @@ Link: https://wokwi.com/projects/427323546919923713
 <img src="https://github.com/user-attachments/assets/65d1d161-48c8-4386-9c08-3418c299231e">
 
 <br>
+
 **Placa 3 (LLUVIA, LDR, RGB, MOTOR-PASOS)**
+
 <br>
 Link: https://app.cirkitdesigner.com/project/b07a5b19-9e06-4433-bb01-3e5187981fbb 
 <img src="https://github.com/user-attachments/assets/cbe0dc9b-e2ec-4521-84fb-8ee250ee25aa">
