@@ -115,10 +115,11 @@ La casa fue creada con materiales comunes de maqueta, pero incorpora piezas func
 - Estructuras para ventanas funcionales.
 
 **📸 Imágenes de la maqueta del proyecto**
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;"> <img src="https://github.com/user-attachments/assets/4df8ea1f-31ee-44a6-a3de-5d4c789c40a6" alt="Imagen 1" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> <img src="https://github.com/user-attachments/assets/ee243578-3fab-410a-8f33-38600f44963d" alt="Imagen 2" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> <img src="https://github.com/user-attachments/assets/42570bd8-5916-4985-ba0b-01f4823fff46" alt="Imagen 3" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> <img src="https://github.com/user-attachments/assets/6ab9da89-50d0-4e04-9206-b45e710d8ad3" alt="Imagen 4" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> </div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;"> <img src="https://github.com/user-attachments/assets/4df8ea1f-31ee-44a6-a3de-5d4c789c40a6" alt="Imagen 1" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> <img src="https://github.com/user-attachments/assets/ee243578-3fab-410a-8f33-38600f44963d" alt="Imagen 2" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> <img src="https://github.com/user-attachments/assets/42570bd8-5916-4985-ba0b-01f4823fff46" alt="Imagen 3" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> <img src="https://github.com/user-attachments/assets/6ab9da89-50d0-4e04-9206-b45e710d8ad3" alt="Imagen 4" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> <img src="https://github.com/user-attachments/assets/2e3ea1b0-e88f-4271-b188-73311f99a1ea" alt="Imagen 4" style="width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"> </div>
 
 ---
 ## 🏠 Diagramas de las placas
+
 **Placa 1 (MQ-02, BUZZER, DISTANCIA)**
 <br>
 Link: https://wokwi.com/projects/427323546919923713 
