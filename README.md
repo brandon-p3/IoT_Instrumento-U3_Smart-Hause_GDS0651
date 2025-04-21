@@ -149,6 +149,10 @@ El sistema guarda todos los datos generados por los sensores en una base de dato
 **Funcionamiento envio correo**
 
 <img src="https://github.com/user-attachments/assets/834f0bbf-a2d1-4bad-9daf-bf862f438c6c">
+https://github.com/user-attachments/assets/67b6bea0-4a98-47fc-81e7-6182e8ca6701
+https://github.com/user-attachments/assets/e322e36b-60ad-4913-acd1-165c06c7bfa4
+
+
 
 ---
 
