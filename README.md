@@ -142,6 +142,8 @@ El sistema guarda todos los datos generados por los sensores en una base de dato
 - Consultas históricas de temperaturas, humo, lluvia, presencia, etc.
 - Análisis estadístico posterior.
 - Exportación de datos para informes o visualización externa.
+- 
+<img src="https://github.com/user-attachments/assets/834f0bbf-a2d1-4bad-9daf-bf862f438c6c">
 ---
 ## Videos explicando el funcionamiento de cada placa
 
