@@ -8,14 +8,14 @@ from umqtt.simple import MQTTClient
 import ujson  # Para enviar mensajes en formato JSON
 
 # -------------------- Configuración WiFi y MQTT --------------------
-SSID = "SiC.r"
-PASSWORD = "SiC2209@2023"
-MQTT_BROKER = "192.168.1.35"
+SSID = "Megacable_RdLp84U"
+PASSWORD = "99uh6AmygyWEqfKzz2"
+MQTT_BROKER = "192.168.0.35"
 
 MQTT_TOPIC_LUZ = "smartHause/sensor/foto"
 MQTT_TOPIC_LLUVIA = "smartHause/sensor/lluvia"
 MQTT_TOPIC_CONTROL = "smartHause/sensor/recibir"  # ← desde aquí llega el control manual
-WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwGKuaOHTw1hUpiZA3aMqFP4aqnwI08iJEXpD0WVQLmOiErrm8ex8TyF4SBM7Aj45xu/exec"
+WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwUAJTQPAj-ZQZzAC70R7lXyaS_WqebFC5XXQ86ZCI-78HFhON8aqx9ZC74AWeuM8Tl/exec"
 
 # -------------------- Pines --------------------
 IN1 = Pin(25, Pin.OUT)
@@ -119,7 +119,7 @@ print("✅ Suscrito a:", MQTT_TOPIC_CONTROL)
 # -------------------- Estado inicial --------------------
 print("🛠️ Sistema iniciado. Abriendo techo por seguridad...")
 abrir_techo()
-estado_anterior_agua = sensor_agua.value()
+estado_anterior_agua = 0
 estado_anterior_luz = sensor_luz.value()
 lluvia_en_curso = False
 tiempo_inicio_lluvia = 0
@@ -148,6 +148,8 @@ while True:
             if lluvia_en_curso:
                 duracion_ms = ticks_ms() - tiempo_inicio_lluvia
                 duracion_horas = round(duracion_ms / (1000 * 60 * 60))
+                if duracion_horas == 0:
+                    duracion_horas = 1
                 print(f"⏱️ Duración de la lluvia: {duracion_horas} horas")
                 mensaje = ujson.dumps({
                     "id_sensor": 4,
@@ -184,4 +186,5 @@ while True:
     client.check_msg()  # Recibir mensajes manuales
 
     sleep(1)
+
 

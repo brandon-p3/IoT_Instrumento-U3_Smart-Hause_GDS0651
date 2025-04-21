@@ -10,7 +10,7 @@ import ujson
 # -------------------- Configuración WiFi y MQTT --------------------
 SSID = "Megacable_RdLp84U"
 PASSWORD = "99uh6AmygyWEqfKzz2"
-MQTT_BROKER = "192.168.0.36"
+MQTT_BROKER = "192.168.0.35"
 MQTT_TOPIC = "smartHause/sensor/humo"
 MQTT_TOPIC2 = "smartHause/sensor/ultrasonico"
 MQTT_TOPIC3 = "smartHause/sensor/humo/enviar"
