@@ -177,6 +177,12 @@ Link a videos
 
 https://drive.google.com/drive/folders/1yig3J2GGEPOLDp7m1ZyxWFej3fN-4ZA3?usp=sharing
 
+## Evidencia (Documento firmado) de los clientes que aprueban el proyecto
+
+Link al documento
+
+https://drive.google.com/file/d/1-QUlkMJvc9JZO_qd18DEQOQgmpPzMd11/view?usp=sharing
+
 ---
 
 ## Ejecicios de Clase
