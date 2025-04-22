@@ -41,9 +41,11 @@ El sistema combina sensores de ambiente con controladores mecánicos para realiz
 El sistema está distribuido en **3 placas ESP32**, cada una encargada de distintos sensores y actuadores. La comunicación entre ellas se realiza mediante **MQTT**, utilizando Node-RED como broker e interfaz de control centralizada.
 
 ```
-        [ESP32-1] ---> Motor Paso, Sensor de Lluvia, LDR
-        [ESP32-2] ---> Detector de Humo, Servo, Buzzer, Motor DC
-        [ESP32-3] ---> Sensor Ultrasónico, Buzzer
+        [ESP32-1] ---> Detector de Humo, Buzzer, Ultrasonico
+        [ESP32-2] ---> Servo, Motor DC
+        [ESP32-3] ---> Motor Paso, Sensor de Lluvia, LDR, LEDs RGB
+
+
 
                       ↕  MQTT
                     [Node-RED]
